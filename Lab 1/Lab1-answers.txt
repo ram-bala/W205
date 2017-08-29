@@ -1,13 +1,31 @@
 Q1: What is the difference between EBS and S3?
+Ans: EBS (Elastic Block Storage) is a storage facility that acts like an
+"external hard drive" to the compute facility that we instantiate. In contrast
+S3 is a storage facility that is used for archiving data and storing backup
+copies of data.  EBS is really useful when it is attached to a compute
+facility (elastic compute - EC2); S3 is a standalone storage facility.
 
-Ans:
 
 Q2: When would you consider a cloud infrastructure for your data science
 tasks?
-Ans:
+
+Ans: I would consider a cloud infrastructure when the compute and storage
+needs are likely to scale (in a hard-to-predict fashion), when the needs are
+sporadic (i.e. demand has many spikes), users are distributed geographically.  
 
 Q3:What is the difference between Spot Instances and Reserved Instances?
-Ans:
+Ans: Spot instances are EC2 instances that are available for use at that given
+point in time.  Typically, these are unused EC2 instances and are available at
+a discount (because they are a perishable good).  Availability of spot
+instances is not guaranteed and as such not reliable for tasks that need to be
+scheduled and completed at specific times.  Reserved Instance on the other
+hand are EC2 instances that are configured and made available at specific
+times during the day - so that they can be used to complete certain tasks that
+are time/resource critical in a reliable fashion.  They tend to be more
+expensive than spot instance pricing.
 
 Q4: List the name of four software packages installed on the UCB AMI?
+Ans: Python, emacs, streamparse, hadoop, perl, c++
+
+
 
