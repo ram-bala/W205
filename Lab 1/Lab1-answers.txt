@@ -1,0 +1,13 @@
+Q1: What is the difference between EBS and S3?
+
+Ans:
+
+Q2: When would you consider a cloud infrastructure for your data science
+tasks?
+Ans:
+
+Q3:What is the difference between Spot Instances and Reserved Instances?
+Ans:
+
+Q4: List the name of four software packages installed on the UCB AMI?
+
