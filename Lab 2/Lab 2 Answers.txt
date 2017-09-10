@@ -1,0 +1,8 @@
+Q1: How many live datanodes are there?
+There is 1 live data node
+
+Q2: How much non-DFS storage is used?
+5.1 GB
+
+Q3: How much DFS storage is used?
+136.87 MB
