@@ -1,3 +1,18 @@
+List the HDFS contents of /user
+
+[w205@ip-172-31-21-66 ~]$ hdfs dfs -ls /user
+Found 8 items
+drwxr-xr-x   - mapred  supergroup          0 2017-09-10 01:13 /user/history
+drwxrwxrwx   - hive    supergroup          0 2017-09-10 01:13 /user/hive
+drwxrwxrwx   - hue     supergroup          0 2017-09-10 01:13 /user/hue
+drwxrwxrwx   - jenkins supergroup          0 2017-09-10 01:13 /user/jenkins
+drwxrwxrwx   - oozie   supergroup          0 2017-09-10 01:13 /user/oozie
+drwxrwxrwx   - root    supergroup          0 2017-09-10 01:13 /user/root
+drwxr-xr-x   - hdfs    supergroup          0 2017-09-10 01:14 /user/spark
+drwxr-xr-x   - w205    supergroup          0 2017-09-10 01:38 /user/w205
+
+
+
 Q1: How many live datanodes are there?
 There is 1 live data node
 
@@ -6,3 +21,4 @@ Q2: How much non-DFS storage is used?
 
 Q3: How much DFS storage is used?
 136.87 MB
+
