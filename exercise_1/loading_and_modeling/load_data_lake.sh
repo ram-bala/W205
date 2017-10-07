@@ -6,12 +6,13 @@
 
 #!/usr/bin/bash 
 MY_DIR=$(pwd)
-DATASTATUSFILE=~/staging/exercise_1/Data_Status.txt
+DATASTATUSFILE=/data/staging/exercise_1/Data_Status.txt
 if [ ! -e "$DATASTATUSFILE" ] 
 then
 	source ./load_files_setup.sh
 fi
 awk -f load_files.awk list_of_files.txt>load_files.sh
 chmod +x load_files.sh
-#source ./load_files.sh
+source ./load_files.sh
+exit
 
