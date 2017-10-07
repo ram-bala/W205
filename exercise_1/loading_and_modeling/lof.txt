@@ -1,0 +1,2 @@
+Complications and Deaths - Hospital.csv;deaths_hospital
+Complications and Deaths - National.csv;deaths_national

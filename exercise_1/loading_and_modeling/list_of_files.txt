@@ -1,0 +1,15 @@
+Complications and Deaths - Hospital.csv;comp_deaths_hospital
+Complications and Deaths - National.csv;comp_deaths_national
+Complications and Deaths - State.csv;comp_deaths_state
+HCAHPS - Hospital.csv;hcahps_hospital
+HCAHPS - National.csv;hcahps_national
+HCAHPS - State.csv;hcahps_state
+hvbp_hcahps_11_10_2016.csv;survey
+Measure Dates.csv;measure_dates
+Timely and Effective Care - Hospital.csv;eff_care_hospital
+Timely and Effective Care - National.csv;eff_care_national
+Timely and Effective Care - State.csv;eff_care_state
+Hospital General Information.csv;hospitals_gen_info
+Hospital Returns - Hospital.csv;readmissions_hospitals
+Hospital Returns - National.csv;readmissions_national
+Hospital Returns - State.csv;readmissions_state
