@@ -1,0 +1,3 @@
+show tables;
+describe hospitals_gen_info;
+select * from hospitals_gen_info limit 10;
