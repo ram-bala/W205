@@ -1,46 +1,91 @@
 hdfs dfs -mkdir /user/w205/exercise_1
 tail -n +2 "/data/staging/exercise_1/Complications and Deaths - Hospital.csv" >/data/staging/exercise_1/comp_deaths_hospital_no_header.csv
+echo "make directory in hdfs for comp_deaths_hospital"
 hdfs dfs -mkdir /user/w205/exercise_1/comp_deaths_hospital
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/comp_deaths_hospital_no_header.csv /user/w205/exercise_1/comp_deaths_hospital
+echo "Done putting file into hdfs for comp_deaths_hospital"
 tail -n +2 "/data/staging/exercise_1/Complications and Deaths - National.csv" >/data/staging/exercise_1/comp_deaths_national_no_header.csv
+echo "make directory in hdfs for comp_deaths_national"
 hdfs dfs -mkdir /user/w205/exercise_1/comp_deaths_national
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/comp_deaths_national_no_header.csv /user/w205/exercise_1/comp_deaths_national
+echo "Done putting file into hdfs for comp_deaths_national"
 tail -n +2 "/data/staging/exercise_1/Complications and Deaths - State.csv" >/data/staging/exercise_1/comp_deaths_state_no_header.csv
+echo "make directory in hdfs for comp_deaths_state"
 hdfs dfs -mkdir /user/w205/exercise_1/comp_deaths_state
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/comp_deaths_state_no_header.csv /user/w205/exercise_1/comp_deaths_state
+echo "Done putting file into hdfs for comp_deaths_state"
 tail -n +2 "/data/staging/exercise_1/HCAHPS - Hospital.csv" >/data/staging/exercise_1/hcahps_hospital_no_header.csv
+echo "make directory in hdfs for hcahps_hospital"
 hdfs dfs -mkdir /user/w205/exercise_1/hcahps_hospital
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/hcahps_hospital_no_header.csv /user/w205/exercise_1/hcahps_hospital
+echo "Done putting file into hdfs for hcahps_hospital"
 tail -n +2 "/data/staging/exercise_1/HCAHPS - National.csv" >/data/staging/exercise_1/hcahps_national_no_header.csv
+echo "make directory in hdfs for hcahps_national"
 hdfs dfs -mkdir /user/w205/exercise_1/hcahps_national
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/hcahps_national_no_header.csv /user/w205/exercise_1/hcahps_national
+echo "Done putting file into hdfs for hcahps_national"
 tail -n +2 "/data/staging/exercise_1/HCAHPS - State.csv" >/data/staging/exercise_1/hcahps_state_no_header.csv
+echo "make directory in hdfs for hcahps_state"
 hdfs dfs -mkdir /user/w205/exercise_1/hcahps_state
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/hcahps_state_no_header.csv /user/w205/exercise_1/hcahps_state
+echo "Done putting file into hdfs for hcahps_state"
 tail -n +2 "/data/staging/exercise_1/hvbp_hcahps_11_10_2016.csv" >/data/staging/exercise_1/survey_no_header.csv
+echo "make directory in hdfs for survey"
 hdfs dfs -mkdir /user/w205/exercise_1/survey
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/survey_no_header.csv /user/w205/exercise_1/survey
+echo "Done putting file into hdfs for survey"
 tail -n +2 "/data/staging/exercise_1/Measure Dates.csv" >/data/staging/exercise_1/measure_dates_no_header.csv
+echo "make directory in hdfs for measure_dates"
 hdfs dfs -mkdir /user/w205/exercise_1/measure_dates
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/measure_dates_no_header.csv /user/w205/exercise_1/measure_dates
+echo "Done putting file into hdfs for measure_dates"
 tail -n +2 "/data/staging/exercise_1/Timely and Effective Care - Hospital.csv" >/data/staging/exercise_1/eff_care_hospital_no_header.csv
+echo "make directory in hdfs for eff_care_hospital"
 hdfs dfs -mkdir /user/w205/exercise_1/eff_care_hospital
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/eff_care_hospital_no_header.csv /user/w205/exercise_1/eff_care_hospital
+echo "Done putting file into hdfs for eff_care_hospital"
 tail -n +2 "/data/staging/exercise_1/Timely and Effective Care - National.csv" >/data/staging/exercise_1/eff_care_national_no_header.csv
+echo "make directory in hdfs for eff_care_national"
 hdfs dfs -mkdir /user/w205/exercise_1/eff_care_national
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/eff_care_national_no_header.csv /user/w205/exercise_1/eff_care_national
+echo "Done putting file into hdfs for eff_care_national"
 tail -n +2 "/data/staging/exercise_1/Timely and Effective Care - State.csv" >/data/staging/exercise_1/eff_care_state_no_header.csv
+echo "make directory in hdfs for eff_care_state"
 hdfs dfs -mkdir /user/w205/exercise_1/eff_care_state
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/eff_care_state_no_header.csv /user/w205/exercise_1/eff_care_state
+echo "Done putting file into hdfs for eff_care_state"
 tail -n +2 "/data/staging/exercise_1/Hospital General Information.csv" >/data/staging/exercise_1/hospitals_gen_info_no_header.csv
+echo "make directory in hdfs for hospitals_gen_info"
 hdfs dfs -mkdir /user/w205/exercise_1/hospitals_gen_info
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/hospitals_gen_info_no_header.csv /user/w205/exercise_1/hospitals_gen_info
+echo "Done putting file into hdfs for hospitals_gen_info"
 tail -n +2 "/data/staging/exercise_1/Hospital Returns - Hospital.csv" >/data/staging/exercise_1/readmissions_hospitals_no_header.csv
+echo "make directory in hdfs for readmissions_hospitals"
 hdfs dfs -mkdir /user/w205/exercise_1/readmissions_hospitals
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/readmissions_hospitals_no_header.csv /user/w205/exercise_1/readmissions_hospitals
+echo "Done putting file into hdfs for readmissions_hospitals"
 tail -n +2 "/data/staging/exercise_1/Hospital Returns - National.csv" >/data/staging/exercise_1/readmissions_national_no_header.csv
+echo "make directory in hdfs for readmissions_national"
 hdfs dfs -mkdir /user/w205/exercise_1/readmissions_national
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/readmissions_national_no_header.csv /user/w205/exercise_1/readmissions_national
+echo "Done putting file into hdfs for readmissions_national"
 tail -n +2 "/data/staging/exercise_1/Hospital Returns - State.csv" >/data/staging/exercise_1/readmissions_state_no_header.csv
+echo "make directory in hdfs for readmissions_state"
 hdfs dfs -mkdir /user/w205/exercise_1/readmissions_state
+echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/readmissions_state_no_header.csv /user/w205/exercise_1/readmissions_state
+echo "Done putting file into hdfs for readmissions_state"

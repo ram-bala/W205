@@ -3,7 +3,7 @@
 #2. Download the remote file
 #3. Unzip the downloaded file into the data directory
 
-#!/usr/bin/bash
+#!/bin/bash
 
 #save current directory
 MY_DIR=$(pwd)
@@ -49,5 +49,4 @@ then
 	echo "Successfully downloaded the file - OK to execute load_data_lake.sh script"
 fi
 cd $MY_DIR
-exit
 
