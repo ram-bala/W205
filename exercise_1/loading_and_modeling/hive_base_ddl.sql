@@ -101,4 +101,108 @@ WITH SERDEPROPERTIES (
 STORED AS TEXTFILE
 LOCATION 'user/w205/exercise_1/hospitals_gen_info;
 
+DROP TABLE measure_dates;
+CREATE EXTERNAL TABLE measure_dates (
+name string,
+id string,
+st_qtr string,
+st_date string,
+end_qtr string,
+end_dt string
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+"separatorChar"=",",
+"quoteChar"='"',
+"escapeChar"='\\'
+)
+STORED AS TEXTFILE
+LOCATION /user/w205/exercise_1/measure_dates;
+
+DROP TABLE eff_care_hospital;
+CREATE EXTERNAL TABLE eff_care_hospital (
+id string,
+name string,
+address string,
+city string,
+state string,
+zip string,
+county string,
+phone string,
+condition string,
+measure_id string,
+measure_name string,
+score string,
+sample_size string,
+footnote string,
+measure_start_date string,
+measure_end_date string
+
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+"separatorChar"=",",
+"quoteChar"='"',
+"escapeChar"='\\'
+)
+STORED AS TEXTFILE
+LOCATION /user/w205/exercise_1/eff_care_hospital;
+
+DROP TABLE readmissions_hospital;
+CREATE EXTERNAL TABLE readmissions_hospital (
+id string,
+name string,
+address string,
+city string,
+state string,
+zip string,
+county string,
+phone string,
+measure_name string,
+measure_id string,
+vs_national string,
+denominator string,
+score string,
+low_estimate string,
+high_estimate string,
+footnote string,
+measure_st_date string,
+measure_end_date string
+
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+"separatorChar"=",",
+"quoteChar"='"',
+"escapeChar"='\\'
+)
+STORED AS TEXTFILE
+LOCATION /user/w205/exercise_1/readmissions_hospital;
+
+DROP TABLE outpatient_imaging_hospital;
+CREATE EXTERNAL TABLE outpatient_imaging_hospital (
+id string,
+name string,
+address string,
+city string,
+state string,
+zip string,
+county string,
+phone string,
+measure_id string,
+measure_name string,
+score string,
+footnote string,
+measure_st_date string,
+measure_end_date string
+
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+"separatorChar"=",",
+"quoteChar"='"',
+"escapeChar"='\\'
+)
+STORED AS TEXTFILE
+LOCATION /user/w205/exercise_1/outpatient_imaging_hospital;
 
