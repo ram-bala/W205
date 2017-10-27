@@ -1,0 +1,6 @@
+DROP TABLE HOSPITALS;
+CREATE TABLE HOSPITALS AS
+SELECT id, name, address, city, state, zip, type
+FROM hospitals_gen_info
+;
+

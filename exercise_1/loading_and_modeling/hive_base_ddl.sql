@@ -117,7 +117,7 @@ WITH SERDEPROPERTIES (
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION /user/w205/exercise_1/measure_dates;
+LOCATION '/user/w205/exercise_1/measure_dates';
 
 DROP TABLE eff_care_hospital;
 CREATE EXTERNAL TABLE eff_care_hospital (
@@ -146,7 +146,7 @@ WITH SERDEPROPERTIES (
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION /user/w205/exercise_1/eff_care_hospital;
+LOCATION '/user/w205/exercise_1/eff_care_hospital';
 
 DROP TABLE readmissions_hospital;
 CREATE EXTERNAL TABLE readmissions_hospital (
@@ -177,7 +177,7 @@ WITH SERDEPROPERTIES (
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION /user/w205/exercise_1/readmissions_hospital;
+LOCATION '/user/w205/exercise_1/readmissions_hospital';
 
 DROP TABLE outpatient_imaging_hospital;
 CREATE EXTERNAL TABLE outpatient_imaging_hospital (
@@ -204,5 +204,5 @@ WITH SERDEPROPERTIES (
 "escapeChar"='\\'
 )
 STORED AS TEXTFILE
-LOCATION /user/w205/exercise_1/outpatient_imaging_hospital;
+LOCATION '/user/w205/exercise_1/outpatient_imaging_hospital';
 
