@@ -1,12 +1,24 @@
 Q: Are average scores for hospital quality (or procedural variability) correlated with patient ratings?
 
 APPROACH AND JUSTIFICATION:
-The patient survey data file has very detailed information on each question that is posed on the patient survey. There is one particular element which gives us a measure of the overall rating of the hospital.  We used this as the patient's rating of the hospital. Alternatively one could have devised a more continuous measure by looking at responses on the individual questions.  
-For the hospital quality rating, we used the methodology described in Q1.  To measure if there is correlation - we did not do a "corr" function on patient ratings vs. hospital quality of service metric (average z-score on the measures being tracked at each hospital) because the rating is on an ordinal scale. We simply looked at the average z-score (quality of service measure) for each patient rating level.  We would expect that as the patient ratings go down, so would our average z-score metric. 
+The patient survey data file has very detailed information on each question that is posed on the patient survey. 
+There is one particular element which gives us a measure of the overall rating of the hospital.  
+We used this as the patient's rating of the hospital. Alternatively one could have devised a more continuous measure by looking at responses 
+on the individual questions.  
+For the hospital quality rating, we used the methodology described in Q1.  To measure if there is correlation - we did not do a "corr" function 
+on patient ratings vs. hospital quality of service metric (average z-score on the measures being tracked at each hospital) because the 
+rating is on an ordinal scale. We simply looked at the average z-score (quality of service measure) for each patient rating level.  
+We would expect that as the patient ratings go down, so would our average z-score metric. 
 
 
 CONCLUSIONS AND RESULTS:
-The results show that as ratings increase, the avg z score gets better (note: we have arranged all metrics such that a lower value means better). This is somewhat intuitive and somewhat comforting.  Intuitive because patients are in aggregate going to rate hospitals that have good processes (and measurements) in place higher - because they are going to result in better outcomes.  It is also comforting because this means our methodology to aggregate the measures across hospitals seems to make sense.  What we need to do, is conduct a more formal statistical test (anova) to statistically verify that the z-scores for each of these categories is different from each other.  But from just glancing at the average z-scores (and given the sample size of the ratings and the total number of hospitals evaluated) we can see how ratings are indeed reflective of the an objective measure of the  quality of service at each hospital.
+The results show that as ratings increase, the avg z score gets better (note: we have arranged all metrics such that a lower value means better). 
+This is somewhat intuitive and somewhat comforting.  Intuitive because patients are in aggregate going to rate hospitals that have good processes 
+(and measurements) in place higher - because they are going to result in better outcomes.  It is also comforting because this means our methodology 
+to aggregate the measures across hospitals seems to make sense.  What we need to do, is conduct a more formal statistical test (anova) to statistically 
+verify that the z-scores for each of these categories is different from each other.  But from just glancing at the average z-scores (and given the 
+sample size of the ratings and the total number of hospitals evaluated) we can see how ratings are indeed reflective of the an objective measure of 
+the  quality of service at each hospital.
 
 Rating	Z-score  Std Dev
  1	0.35	0.36
