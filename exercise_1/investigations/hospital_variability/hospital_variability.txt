@@ -2,11 +2,17 @@ Which Procedures have the greatest variability among hospitals?
 I interpreted this question to mean which "measures" have the greatest variability across hospitals.
 
 APPROACH AND JUSTIFICATION:
-Again, in the spirit of reusing and being consistent with the answers provided in the other sections, we used the score (adjusted so that lower score always means better) for each measure across hospitals to determine which measures had the largest standard deviations.  Since the standard deviations have the same units as the metric, it would not be meaningful to compare across metrics without any normalization.  One way to normalize is to divide by the mean. This measure - also known as the coefficient of variation (standard deviation divided by mean) is the one that is being used here. This metric is not perfect - but we will use this to answer this question.
+Again, in the spirit of reusing and being consistent with the answers provided in the other sections, we used the score 
+(adjusted so that lower score always means better) for each measure across hospitals to determine which measures had the largest standard deviations.  
+Since the standard deviations have the same units as the metric, it would not be meaningful to compare across metrics without any normalization.  
+One way to normalize is to divide by the mean. This measure - also known as the coefficient of variation (standard deviation divided by mean) 
+is the one that is being used here. This metric is not perfect - but we will use this to answer this question.
 
 
 CONCLUSIONS AND RESULTS:
-Listed below are the top 10 measures with the greatest variability across hospitals. Some of these metrics seem to make sense - like "left before being seen" or "Median time to ECG" - but others are actually somewhat disconcerting - like the first one on the list;  this suggests that choice of hospital could make a huge  difference in the outcome when someone has a heart condition!
+Listed below are the top 10 measures with the greatest variability across hospitals. Some of these metrics seem to make sense - like "left before 
+being seen" or "Median time to ECG" - but others are actually somewhat disconcerting - like the first one on the list;  this suggests that choice of 
+hospital could make a huge  difference in the outcome when someone has a heart condition!
 
 
 MeasureID   	Measure Name							     Coeff Variation
