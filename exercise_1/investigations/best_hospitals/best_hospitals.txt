@@ -1,0 +1,46 @@
+Approach & Justification
+The question we were investigating is: What hospitals are models of high-quality care? That is, which hospitals have the most consistently high scores for a variety of procedures?
+I approached the question in two parts.
+Part 1: What hospitals are models of high-quality care?
+
+This is a complex question. High-quality care is a notion that is very accessible in concept, but extremely tricky to define quantitatively. The CMS website lists several broad categories under which hospitals performance can be evaluated - Mortality & Safety of care, Readmissions, Timeliness & Effectiveness of care and Efficient use of Medican Imaging.  There are several metrics under each of these categories that aim to provide a measure of how well each hospital is performing.  The CMS has compiled a methodology that accumulates all these metrics, compares each hospital's performance to a national average and creates a star rating for each hospital.   So the simplest way to determine the best hospitals is to use this star rating. 
+
+
+
+As an alternative, I created my own metric to measure the quality of service provided at each hospital. To do this, i utilized all the measures that were available in the various data files.  I computed a national average (and standard deviation) for each of these metrics, and used that to standardize each metric at each hospital (essentially a z-score). Now, i could aggregate these z-scores at the individual hospital level to determine which hospitals have the best values.  There are a couple of adjustments that I had make because of nature of the data
+Adjustment 1:  Not every measure was available at every hospital.  So, instead of looking at the sum of the z-scores at each hospital, i looked at the average z-score.  In addition, there were a few hospitals where only a handful of measures were available. In order to have some reliability in the methodology, i restricted this to only hospitals that have at least 20 different metrics being tracked.
+Adjustment 2: For some metrics, a higher value means better performance, and for others a lower value means better performance.  In order to aggregate across all measures - i had to convert every measure to a scale where lower values always means better performance.  I did this by tagging each metric as either +1 (lower is better) or -1 (higher is better) and multiplying each measure by this value (so measures where higher meant better would be turned into  negative values). 
+
+
+RESULTS AND CONCLUSIONS
+
+Here are the results from the first approach (there are MANY 5-star hospitals, so listed below are just 10 of those 5-star hospitals).
+
+ID      Hospital Name                          Rating
+050357  GOLETA VALLEY COTTAGE HOSPITAL         5
+050324  SCRIPPS MEMORIAL HOSPITAL LA JOLLA     5
+050238  METHODIST HOSPITAL OF SOUTHERN CA      5
+050145  COMMUNITY HOSPITAL OF THE MONTEREY P   5
+040147  ARKANSAS SURGICAL HOSPITAL             5
+030105  BANNER HEART HOSPITAL		       5
+030103  MAYO CLINIC HOSPITAL           	       5
+010149  BAPTIST MEDICAL CENTER EAST    	       5
+010125  LAKELAND COMMUNITY HOSPITAL    	       5
+010044  MARION REGIONAL MEDICAL CENTER 	       5
+
+Here are the results from the second approach:
+
+ID   	 Hospital Name			City		State	Score	#Measures
+010125	LAKELAND COMMUNITY HOSPITAL	HALEYVILLE	AL	-0.65	29
+370210	OKLAHOMA SURGICAL HOSPITAL, LLC	TULSA		OK	-0.67	24
+280129	NEBRASKA ORTHOPAEDIC HOSPITAL	OMAHA		NE	-0.68	24
+160029	MERCY HOSPITAL	     		IOWA CITY	IA	-0.7	48
+521349	RIVER FALLS AREA HOSPITAL	RIVER FALLS	WI	-0.71	27
+370026	ST MARY'S REGIONAL MEDICAL CENT	ENID		OK	-0.71	46
+170197	KANSAS MEDICAL CENTER LLC	ANDOVER		KS	-0.71	44
+430095	AVERA HEART HOSPITAL OF SOUTH D	SIOUX FALLS	SD	-0.73	30
+050232	FRENCH HOSPITAL MEDICAL CENTER	SAN LUIS OBISPO	CA	-0.73	45
+670049	NORTH CENTRAL SURGICAL CENTER L	DALLAS	 	TX	-0.89	21
+
+
+

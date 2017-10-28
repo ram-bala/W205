@@ -52,10 +52,3 @@ echo "putting file into hdfs..."
 hdfs dfs -put /data/staging/exercise_1/outpatient_imaging_hospital_no_header.csv /user/w205/exercise_1/outpatient_imaging_hospital/outpatient_imaging_hospital.csv
 echo "Done putting file into hdfs for outpatient_imaging_hospital"
 hdfs dfs -ls /user/w205/exercise_1/outpatient_imaging_hospital
-tail -n +2 "/data/staging/exercise_1/" >/data/staging/exercise_1/_no_header.csv
-echo "make directory in hdfs for "
-hdfs dfs -mkdir /user/w205/exercise_1/
-echo "putting file into hdfs..."
-hdfs dfs -put /data/staging/exercise_1/_no_header.csv /user/w205/exercise_1//.csv
-echo "Done putting file into hdfs for "
-hdfs dfs -ls /user/w205/exercise_1/

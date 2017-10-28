@@ -5,3 +5,4 @@ Timely and Effective Care - Hospital.csv;eff_care_hospital
 Hospital General Information.csv;hospitals_gen_info
 Hospital Returns - Hospital.csv;readmissions_hospital
 Outpatient Imaging Efficiency - Hospital.csv;outpatient_imaging_hospital
+measure_direction.csv;measure_direction

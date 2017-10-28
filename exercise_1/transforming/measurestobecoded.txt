@@ -1,0 +1,57 @@
+COMP_HIP_KNEE	Complications and Deaths
+EDAC_30_AMI	Readmissions
+EDAC_30_HF	Readmissions
+EDV	Timely and Effective Care
+ED_1b	Timely and Effective Care
+ED_2b	Timely and Effective Care
+IMM_2	Timely and Effective Care
+IMM_3_OP_27_FAC_ADHPCT	Timely and Effective Care
+MORT_30_AMI	Complications and Deaths
+MORT_30_CABG	Complications and Deaths
+MORT_30_COPD	Complications and Deaths
+MORT_30_HF	Complications and Deaths
+MORT_30_PN	Complications and Deaths
+MORT_30_STK	Complications and Deaths
+OP_1	Timely and Effective Care
+OP_10	Outpatient Imaging Efficiency
+OP_11	Outpatient Imaging Efficiency
+OP_13	Outpatient Imaging Efficiency
+OP_14	Outpatient Imaging Efficiency
+OP_18b	Timely and Effective Care
+OP_2	Timely and Effective Care
+OP_20	Timely and Effective Care
+OP_21	Timely and Effective Care
+OP_22	Timely and Effective Care
+OP_23	Timely and Effective Care
+OP_29	Timely and Effective Care
+OP_30	Timely and Effective Care
+OP_31	Timely and Effective Care
+OP_3b	Timely and Effective Care
+OP_4	Timely and Effective Care
+OP_5	Timely and Effective Care
+OP_8	Outpatient Imaging Efficiency
+OP_9	Outpatient Imaging Efficiency
+PC_01	Timely and Effective Care
+PSI_10_POST_KIDNEY	Complications and Deaths
+PSI_11_POST_RESP	Complications and Deaths
+PSI_12_POSTOP_PULMEMB_DVT	Complications and Deaths
+PSI_13_POST_SEPSIS	Complications and Deaths
+PSI_14_POSTOP_DEHIS	Complications and Deaths
+PSI_15_ACC_LAC	Complications and Deaths
+PSI_3_ULCER	Complications and Deaths
+PSI_4_SURG_COMP	Complications and Deaths
+PSI_6_IAT_PTX	Complications and Deaths
+PSI_8_POST_HIP	Complications and Deaths
+PSI_90_SAFETY	Complications and Deaths
+PSI_9_POST_HEM	Complications and Deaths
+READM_30_AMI	Readmissions
+READM_30_CABG	Readmissions
+READM_30_COPD	Readmissions
+READM_30_HF	Readmissions
+READM_30_HIP_KNEE	Readmissions
+READM_30_HOSP_WIDE	Readmissions
+READM_30_PN	Readmissions
+READM_30_STK	Readmissions
+STK_4	Timely and Effective Care
+VTE_5	Timely and Effective Care
+VTE_6	Timely and Effective Care
