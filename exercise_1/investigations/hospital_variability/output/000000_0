@@ -1,0 +1,10 @@
+OP_9	Mammography Follow-up Rates	0.61
+OP_20	Door to diagnostic eval	0.62
+ED_2b	ED2	0.64
+OP_5	Median Time to ECG	0.64
+OP_3b	Median Time to Transfer to Another Facility for Acute Coronary Intervention	0.68
+OP_22	Left before being seen	0.99
+PSI_3_ULCER	Pressure sores	1.04
+VTE_6	Hospital acquired potentially preventable venous thromboembolism	2.36
+EDAC_30_AMI	Hospital return days for heart attack patients	3.35
+EDAC_30_HF	Hospital return days for heart failure patients	5.55

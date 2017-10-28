@@ -1,0 +1,24 @@
+What states are models of high quality care?
+Again, there are several approaches to answering this question.  I took the following approach:
+
+APPROACH AND JUSTIFICATION
+Each state has several hospitals.  In  Q1 of this exercise, we identified a methodology to rank hospitals across the nation on a continuous metric that was based on a set of measures that were being reported at each hospital.  We will re-use that metric to determine the states with highest quality care. Since each state has a varying number of hospitals, we took the approach of looking the average score of ALL hospitals in a state and ranked each of the states by this metric and selected the top 10.
+Alternatively, we could have picked another aggregate statistic like median or ranked states based on the proportion of hospitals that are "good" or ranked all hospitals in the nation, and identified the state with the best average rank.  Each approach has it's flaws - we chose the one that allowed us to re-use the methodology already employed in identifying the best hospitals. 
+
+CONCLUSIONS AND RESULTS:
+Listed below are the states, with their average measure score (across all hospitals with at least 20 measures), and the number of hospitals (with at least 20 measures) reporting in the state.  
+As we can see Indiana, Minnesota, Nebraska, Kansas and Colarado top this list.
+
+State	AvgScore NumHospitals
+IN	-0.13	98
+MN	-0.14	62
+NE	-0.14	33
+KS	-0.17	46
+CO	-0.19	44
+WI	-0.2	89
+MT	-0.2	18
+ID	-0.22	13
+UT	-0.23	29
+SD	-0.3	12
+
+

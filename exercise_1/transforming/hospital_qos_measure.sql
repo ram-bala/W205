@@ -28,3 +28,4 @@ measure_st_date as measure_start_date, measure_end_date
 from outpatient_imaging_hospital
 where score not like "Not%";
 
+
