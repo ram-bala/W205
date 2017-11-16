@@ -1,0 +1,70 @@
+Submission 1
+
+How many rows are missing a value in the "State" column? Explain how you came up with the number.
+ANS: 5377 (it is listed right next to "blanks" under the list of states facet/filter window pane)
+
+SUBMISSION 2:
+How many rows with missing ZIP codes do you have?
+4362 - shows up as "blanks"
+
+SUBMISSION 3:
+
+*If you consider all ZIP codes less than 99999 to be valid, how many valid and invalid ZIP codes do you have, respectively?
+39323
+
+SUBMISSION 4:
+
+Change the radius to 3.0. What happens? Do you want to merge any of the resulting matches?
+It finds more clusters (4 in all) But it also tries to group Pakistan and Tajikistan together (Indonesia and Micronesia as well) - these are not the same.
+
+SUBMISSION 5:
+
+Change the block size to 2. Give two examples of new clusters that may be worth merging.
+
+
+Yes - there are several clusters i would want to merge: Examples below,
+
+    Alaska(791 rows)
+    alaska(4 rows)
+    Alaksa(1 rows)
+    Alaa(1 rows)
+    Alaka(1 rows)
+    Alska(1 rows)
+
+
+    California(84 rows)
+    Calfiornia(1 rows)
+    Cailfornia(1 rows)
+
+SUBMISSION 6:
+
+Explain in words what happens when you cluster the "place" column, and why you think that happened. What additional functionality could OpenRefine provide to possibly deal with the situation?
+
+Hint: you may want to cancel the run.
+
+I took the hint - it takes way too long to find clusters. First of all the strings are very lengthy and there are too many edit distances to compute to go from one long string to another long string.  The edit distances make these strings "far" from each-other thus making clustering a rather onerous task computationally.  OpenRefine could provide some estimate for the order of computation (how long it will take to complete the clustering) to provide the user a sense for the complexity of the task.
+
+
+
+
+SUBMISSION 7:
+
+Submit a representation of the resulting matrix from the Levenshtein edit distance calculation. The resulting value should be correct.
+
+distance("GUNBARELL", "GUMBARREL") returns 3.
+Here is the matrix output with the calcs.
+
+    G U N B A R E L L
+  0 1 2 3 4 5 6 7 8 9
+G 1 0 1 2 3 4 5 6 7 8
+U 2 1 0 1 2 3 4 5 6 7
+M 3 2 1 1 2 3 4 5 6 7 
+B 4 3 2 2 1 2 3 4 5 6
+A 5 4 3 3 2 1 2 3 4 5
+R 6 5 4 4 3 2 1 2 3 4
+R 7 6 5 5 4 3 2 2 3 4
+E 8 7 6 6 5 4 3 2 3 4
+L 9 8 7 7 6 5 4 3 2 3
+
+
+
