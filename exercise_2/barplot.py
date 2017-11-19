@@ -16,7 +16,7 @@ bar_labels = [rec[0] for rec in records]
 bar_length = [rec[1] for rec in records]
 
 plt.barh(bar_val, bar_length)
-plt.ylabel(bar_labels, rotation=0)
+plt.ylabel(bar_labels, rotation=90)
 plt.savefig('barplot.png')
 conn.commit()
 conn.close()
