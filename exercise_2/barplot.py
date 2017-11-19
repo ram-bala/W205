@@ -19,7 +19,7 @@ plt.barh(bar_val, bar_length, align='center', alpha=0.5)
 plt.yticks(bar_val, bar_labels)
 
 
-plt.xlabel('Occurences')
+plt.xlabel('Number of Occurences')
 plt.title('Number of Occurrences of the Top 20 Words')
 
 plt.savefig('barplot.png')
