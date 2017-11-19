@@ -11,11 +11,13 @@ cur = conn.cursor()
 cur.execute("SELECT word, count FROM tweetwordcount order by count DESC limit 20")
 records = cur.fetchall()
 print len(records)
-x_val = [a for a in range(0,len(records))]
-x = [rec[0] for rec in records]
-y = [rec[1] for rec in records]
+bar_val = [a for a in range(0,len(records))]
+bar_labels = [rec[0] for rec in records]
+bar_length = [rec[1] for rec in records]
 
-plt.barh(x_val,y)
+plt.barh(bar_val, bar_length)
+plt.yticks(bar_val)
+plt.ylabel(bar_labels)
 plt.savefig('barplot.png')
 conn.commit()
 conn.close()
