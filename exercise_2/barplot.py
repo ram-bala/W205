@@ -11,16 +11,19 @@ cur = conn.cursor()
 cur.execute("SELECT word, count FROM tweetwordcount order by count DESC limit 20")
 records = cur.fetchall()
 print len(records)
+
 bar_val = range(0,len(records))
 bar_labels = [rec[0] for rec in records]
 bar_length = [rec[1] for rec in records]
 
 
-plt.bar(bar_val, bar_length, align='center', alpha=0.5)
-plt.xticks(bar_val, bar_labels)
+plt.barh(bar_val, bar_length, align='center', alpha=0.5)
+plt.yticks(bar_val, bar_labels)
 
-plt.ylabel('Occurences')
+
+plt.xlabel('Occurences')
 plt.title('Number of Occurrences of the Top 20 Words')
+
 plt.savefig('barplot.png')
 
 conn.commit()
