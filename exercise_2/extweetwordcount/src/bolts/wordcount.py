@@ -9,6 +9,9 @@ class WordCounter(Bolt):
     def initialize(self, conf, ctx):
         self.counts = Counter()
         self.conn  = psycopg2.connect(database="tcount", user="postgres", password = "pass", host="localhost", port="5432")
+        cur = self.conn.cursor()
+        #empty out the table first
+        cur.execute("DELETE FROM tweetwordcount")
         
 
     def process(self, tup):

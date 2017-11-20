@@ -22,7 +22,7 @@ plt.yticks(bar_val, bar_labels)
 plt.xlabel('Number of Occurences')
 plt.title('Number of Occurrences of the Top 20 Words')
 
-plt.savefig('barplot.png')
+plt.savefig('Plot.png')
 
 conn.commit()
 conn.close()
